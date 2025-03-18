@@ -136,7 +136,7 @@
 
         function loginAsAdmin() {
             const input = document.getElementById('adminInput').value;
-            if (input === "009988") {
+            if (input === "099") {
                 isAdmin = true;
                 localStorage.setItem('isAdmin', 'true');
                 localStorage.removeItem('isUser');
@@ -262,7 +262,7 @@
 
         function buyNow(name, priceSYP, priceTRY) {
             const message = `أريد شراء المنتج: ${name}${priceSYP ? ` بسعر ${priceSYP} ليرة سورية` : ''}${priceTRY ? ` أو ${priceTRY} ليرة تركية` : ''}. ما الخطوة التالية؟`;
-            const whatsappUrl = `https://wa.me/+963959651343?text=${encodeURIComponent(message)}`;
+            const whatsappUrl = `https://wa.me/+963997957962?text=${encodeURIComponent(message)}`;
             window.open(whatsappUrl, '_blank');
         }
 
